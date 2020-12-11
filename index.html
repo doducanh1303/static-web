@@ -1,75 +1,827 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+   <header>
+   <div class="container">
+     <div class="container_all">
+       <div class="container_top">
+           <div class="container_top_left">
+               <div class="speak">
+                   <i class="fa fa-volume-up" aria-hidden="true"></i>
+                   <span>Sms Default welcome !</span>
+               </div>
+               <div class="gift">
+                   <i class="fa fa-gift" aria-hidden="true"></i>
+                   <span>Gift Vouchers</span>
+               </div>
+           </div>
+           <div class="container_top_right">
+                 <div class="en">
+                   <i class="fa fa-language" aria-hidden="true"></i>
+                   <span class="lang">Language :</span>
+                   <span class="lang-title">EN</span>
+                  
+                   <i class="fa fa-angle-down" aria-hidden="true"></i>
+                   <div class="hover-lang">
+                       <ul>
+                           <li>EN-English</li>
+                           <li>US-American</li>
+                           <li>FR-France</li>
+                       </ul>
+                   </div>
+                 </div> 
+
+                 <div class="usd">
+                   <i class="fa fa-money" aria-hidden="true"></i>
+                   <span class="currency">Currency:</span>
+                   <span class="currency-sign">USD</span>
+                   <i class="fa fa-angle-down" aria-hidden="true"></i>
+                   <div class="hover-usd">
+                       <ul>
+                           <li>USD-Dollars</li>
+                           <li>Eur-Euro</li>
+                           <li>GBP-Pound</li>
+                       </ul>
+                   </div>
+                 </div> 
+               
+                 <div class="login">
+                  <a href="login.html">Sign In</a>
+                 </div> 
+           </div>
+       </div>
+       <div class="center">
+            <div class="center_left">
+                   <a href="#"><img src="image/logo.png" alt=""></a>
+            </div>
+            <div class="center_center_1">
+              <nav>
+                  <ul>
+                      <li>HOME</li>
+                      <li class="bestseller">
+                          BESTSELLER
+                        
+                          <div class="dropbestseller">
+                           <div class="arrow-up"></div>
+                              <div class="best-list">
+                               <div class="best-list1">
+                                  <h3>Fashion</h3>
+                                  <a href="#">Clothings</a>
+                                  <a href="#">Shoes</a>
+                                  <a href="#">Backpack</a>
+                                  <a href="#">Hat</a>
+                                  <a href="#">Accessories</a>
+                               </div>
+                               <div class="best-list1">
+                                   <h3>Fashion</h3>
+                                   <a href="#">Clothings</a>
+                                   <a href="#">Shoes</a>
+                                   <a href="#">Backpack</a>
+                                   <a href="#">Hat</a>
+                                   <a href="#">Accessories</a>
+                               </div>
+                               <div class="best-list1">
+                                   <h3>Fashion</h3>
+                                   <a href="#">Clothings</a>
+                                   <a href="#">Shoes</a>
+                                   <a href="#">Backpack</a>
+                                   <a href="#">Hat</a>
+                                   <a href="#">Accessories</a>
+                               </div>
+                               <div class="best-list1">
+                                  <img src="image/kid.png" class=""alt="">
+                               </div>
+                              </div>
+                          </div>
+                       </li>
+                      <li>NEWARRIVAL</li>
+                      <li>SALE</li>
+                      <li>BLOGS</li>
+                      <li>ABOUT US</li>
+                  </ul>
+              </nav>
+            </div>
+            <div class="center_center_2">
+                <input type="text" placeholder="Search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+           </div>
+           <div class="center-right">
+      <img class="cart" src="image/cart.png" alt="">
+                 <div class="table-cart">
+                   <table style="width:100%">
+                   
+                       <tr>
+                         <th>Image</th>
+                         <th>Name</th>
+                         <th>Quantity</th>
+                         <th>Action</th>
+                       </tr>
+                       <tr>
+                         <td><img src="image/cart1.png" alt=""></td>
+                         <td>$100</td>
+                         <td>$100</td>
+                         <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+                       </tr>
+                       <tr>
+                           <td>Total</td>
+                           <td></td>
+                           <td></td>
+                           <td>2000</td>
+                       </tr>
+                       
+                     </table>
+                 </div>
+           </div>
+       </div>
+     </div>
+   </div>
+   </header>
+   <main>
+    <div class="container-main">
+        <div class="container-main-all">
+            <div class="container-main-left">
+                 <ul>
+                     <li class="active">
+                       <i class="fa fa-bars" aria-hidden="true"></i>  
+                       <span>CATEGORIES</span>   
+                      </li>
+                     <li>
+                         <div class="toggle">
+                           Clothings
+                           <a href="#" id="thaydoi">  <i class="fa fa-plus" aria-hidden="true"></i></a>
+                         </div>
+                            <div class="toggle-content">
+                                <div class="toggle-left">
+                                    <h3>Clothings</h3>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul>
+                                </div>
+                           
+                            </div>
+                       </li>
+                     <li>Shoes</li>
+                     <li>
+                         Backpack
+                        <a href="">  <i class="fa fa-plus" aria-hidden="true"></i></a>
+                       </li>
+                     <li>Hat</li>
+                     <li>Accessories</li>
+                     <li>Toys</li>
+                     <li>Book</li>
+                 </ul>
+            </div>
+              
+                   <div class="container-main-center">
+                       <div class="owl-carousel">
+                           <div> <img src="image/slider.png" alt=""> </div>
+                           <div> <img src="image/slider1.png" alt=""> </div>
+                         
+                         </div>
+                   </div>
+                       <!-- <div class="slider">
+                           <div class="imgslider active1">
+                               <img src="image/slider.png" alt="">
+                               
+                           </div>
+                           
+       
+                       </div>
+                       <div class="container-main-right">
+                           <img src="image/slider-right.png" alt="">
+                       </div> -->
+                     
+                    </div>
+             
+        </div>
+    
+    <div class="container1">
+        <div class="container-product">
+                 <div class="container-list">
+                   <!-- New Arrival -->
+                
+                   <div class="product-left">
+                       <div class="title-product">
+                          <h3>New Arrival</h3>
+                          <div class="nut">
+                           <i class="fa fa-angle-left" aria-hidden="true"></i>
+                           <i class="fa fa-angle-right" aria-hidden="true"></i>
+                       </div>
+                     </div>
+                     <div class="owl-carousel">
+                    <div>
+                       <div class="product-item-left">
+                           <img src="image/product-left.png" alt="">
+                           <div class="product-left-text">
+                                <p class="name">
+                                    Animals Print Sweat
+                                </p>
+                                  <p class="start">
+                                      <img src="image/start.png" alt="">
+                                      <span>6 Reviews</span>
+                                  </p>
+                                  <p class="money">
+                                      <span class="money1">$36.00</span>
+                                      <span class="money2">$42.00</span>
+                                  </p>
+                           </div>
+                       </div>
+                       <div class="product-item-left">
+                          <img src="image/product-left1.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                      <div class="product-item-left">
+                          <img src="image/product-left2.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                       <div class="product-item-left">
+                           <img src="image/product-left2.png" alt="">
+                           <div class="product-left-text">
+                                <p class="name">
+                                    Animals Print Sweat
+                                </p>
+                                  <p class="start">
+                                      <img src="image/start.png" alt="">
+                                      <span>6 Reviews</span>
+                                  </p>
+                                  <p class="money">
+                                      <span class="money1">$36.00</span>
+                                      <span class="money2">$42.00</span>
+                                  </p>
+                           </div>
+                       </div>
+                       <div class="product-item-left">
+                          <img src="image/product-left1.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                      <div class="product-item-left">
+                          <img src="image/product-left.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                    </div>
+                     
+                     </div>
+                     
+                   </div>
+
+                  <!-- testimonial -->
+                       
+                  <div class="testimonial">
+                      <h3>Testimonial</h3>
+                        <div class="testimonial-content">
+                            <img src="image/user.png" alt="">
+                            <p>
+                                <span>Do Duc Anh</span>
+                                <span>Web Developer</span>
+                            </p>
+                        </div>
+                        <div class="testimonial-content-text">
+                            <img src="image/phay.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Quod exercitationem 
+                                 sint at dignissimos provident eveniet ullam, 
+                                 ab ex obcaecati et.
+                           </p>
+                           <ul>
+                               <li>1</li>
+                               <li>2</li>
+                               <li>3</li>
+                           </ul>
+                        </div>
+                  </div>
+
+                  <!-- bestseller -->
+
+                <div class="bestseller">
+                   <div class="product-left">
+                       <div class="title-product">
+                          <h3>Bestseller</h3>
+                          <div class="nut">
+                           <i class="fa fa-angle-left" aria-hidden="true"></i>
+                           <i class="fa fa-angle-right" aria-hidden="true"></i>
+                       </div>
+                     </div>
+                       <div class="product-item-left">
+                           <img src="image/product-toy.png" alt="">
+                           <div class="product-left-text">
+                                <p class="name">
+                                    Animals Print Sweat
+                                </p>
+                                  <p class="start">
+                                      <img src="image/start.png" alt="">
+                                      <span>6 Reviews</span>
+                                  </p>
+                                  <p class="money">
+                                      <span class="money1">$36.00</span>
+                                      <span class="money2">$42.00</span>
+                                  </p>
+                           </div>
+                       </div>
+                       <div class="product-item-left">
+                           <img src="image/product-toy1.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                      <div class="product-item-left">
+                       <img src="image/product-toy2.png" alt="">
+                          <div class="product-left-text">
+                               <p class="name">  Animals Print Sweat</p>
+                                 <p class="start">
+                                     <img src="image/start.png" alt="">
+                                     <span>6 Reviews</span>
+                                 </p>
+                                 <p class="money">
+                                     <span class="money1">$36.00</span>
+                                     <span class="money2">$42.00</span>
+                                 </p>
+                          </div>
+                      </div>
+                   </div>
                 </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
+                  <!-- BLOG -->
+                <div class="blog">
+                   <div class="title-product">
+                       <h3>Blog</h3>
+                       <div class="nut">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                       <img src="image/blog.png" alt="">
+                       <p class="blog_name">
+                           Our Kindergarten Anniversary
+                       </p>
+                       <div class="time">
+                           <div class="time_left">
+                               <img src="image/user.png" alt="">
+                               <span>Do Duc Anh</span>
+                           </div>
+                           <div class="time_right">
+                               <i class="fa fa-calendar" aria-hidden="true"></i>
+                               <p class="calendar">
+                                   Jan 30, 2018
+                               </p>
+                           </div>
+                       </div>
+                       <p class="content">
+                           The perject class for your child with the best staff and best teacher
+                       </p>
+                       <div class="comment">
+                          <div class="comment-left">
+                           <i class="fa fa-comments" aria-hidden="true"></i>
+                           <p class="total-comment">
+                               123 Comments
+                           </p>
+                          </div>
+                          <div class="comment-right">
+                          <a href=""> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                          <p class="total-like">
+                              98 Likes
+                          </p>
+                          </div>
+                       </div>
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
+                </div>
+                  
+                 </div>
+            <div class="product-right">
+               <div class="ads">
+                   <img src="image/ads2.png" alt="">
+               </div>
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
+               <div class="fashionproduct">
+                   <div class="fashion_text_title">
+                       <h3>Fashion Products</h3> 
+                       <div class="viewall">
+                           <div id="view">
+                               <span>View All Products</span>
+                               <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                           </div>
+                           <div class="nut">
+                               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                               <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="fshionproduct_all">
+                       <div class="fashion_left">
+                           <img src="image/product-right.png" alt="">
+                      </div>
+                      <div class="fashion_right">
+                         <div class="fashion_right_item">
+                             <img src="image/product-right2.png" alt="">
+                             <div class="fashion_text">
+                                 <p class="fashion_text_name">
+                                     Crepe Jacke With Pompom
+                                 </p>
+                                 <p class="start">
+                                  <img src="image/start.png" alt="">
+                                  <span>6 Reviews</span>
+                              </p>
+                                 <p class="money">
+                                  <span class="money1">$36.00</span>
+                                  <span class="money2">$42.00</span>
+                              </p>
+                             </div>
+                             <div class="itemhover">
+                                 <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                                 <span><i class="fa fa-balance-scale" aria-hidden="true"></i></span>
+                                 <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+                             </div>
+                         </div>   
+                         <div class="fashion_right_item">
+                          <img src="image/product-left2.png" alt="">
+                          <div class="fashion_text">
+                              <p class="fashion_text_name">
+                                  Crepe Jacke With Pompom
+                              </p>
+                              <p class="start">
+                               <img src="image/start.png" alt="">
+                               <span>6 Reviews</span>
+                           </p>
+                              <p class="money">
+                               <span class="money1">$36.00</span>
+                               <span class="money2">$42.00</span>
+                           </p>
+                          </div>
+                      </div> 
+                      <div class="fashion_right_item">
+                          <img src="image/product-right3.png" alt="">
+                          <div class="fashion_text">
+                              <p class="fashion_text_name">
+                                  Crepe Jacke With Pompom
+                              </p>
+                              <p class="start">
+                               <img src="image/start.png" alt="">
+                               <span>6 Reviews</span>
+                           </p>
+                              <p class="money">
+                               <span class="money1">$36.00</span>
+                               <span class="money2">$42.00</span>
+                           </p>
+                          </div>
+                      </div> 
+                      <div class="fashion_right_item">
+                          <img src="image/product-right4.png" alt="">
+                          <div class="fashion_text">
+                              <p class="fashion_text_name">
+                                  Crepe Jacke With Pompom
+                              </p>
+                              <p class="start">
+                               <img src="image/start.png" alt="">
+                               <span>6 Reviews</span>
+                           </p>
+                              <p class="money">
+                               <span class="money1">$36.00</span>
+                               <span class="money2">$42.00</span>
+                           </p>
+                          </div>
+                      </div>      
+                         
+                      </div>
+                   </div>
+                 
+               </div>
+                   <div class="fashion-ads">
+                       <img src="image/ads3.png" alt="">
+                       <img src="image/ads4.png" alt="">
+                   </div>
 
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
+                  <!-- TOY -->
 
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
 
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
+               <div class="toy">
+                   
+                       <div class="fashion_text_title">
+                           <h3>Toys</h3> 
+                           <div class="viewall">
+                               <div id="view">
+                                   <span>View All Products</span>
+                                   <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                               </div>
+                               <div class="nut">
+                                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                   <i class="fa fa-angle-right" aria-hidden="true"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="fshionproduct_all">
+                           <div class="fashion_left">
+                               <img src="image/product-toy3.png" alt="">
+                          </div>
+                          <div class="fashion_right">
+                             <div class="fashion_right_item">
+                                 <img src="image/product-toy4.png" alt="">
+                                 <div class="fashion_text">
+                                     <p class="fashion_text_name">
+                                         Crepe Jacke With Pompom
+                                     </p>
+                                     <p class="start">
+                                      <img src="image/start.png" alt="">
+                                      <span>6 Reviews</span>
+                                  </p>
+                                     <p class="money">
+                                      <span class="money1">$36.00</span>
+                                      <span class="money2">$42.00</span>
+                                  </p>
+                                 </div>
+                             </div>   
+                             <div class="fashion_right_item">
+                               <img src="image/product-toy5.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div> 
+                          <div class="fashion_right_item">
+                           <img src="image/product-toy6.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div> 
+                          <div class="fashion_right_item">
+                           <img src="image/product-toy7.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div>      
+                             
+                          </div>
+                   
+                     
+                   </div>
+               </div>
 
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
+               <!-- Education -->
 
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
 
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+               <div class="education">
+                   <div class="toy">
+                   
+                       <div class="fashion_text_title">
+                           <h3>Education</h3> 
+                           <div class="viewall">
+                               <div id="view">
+                                   <span>View All Products</span>
+                                   <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                               </div>
+                               <div class="nut">
+                                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                   <i class="fa fa-angle-right" aria-hidden="true"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="fshionproduct_all">
+                           <div class="fashion_left">
+                               <img src="image/product-education.png" alt="">
+                          </div>
+                          <div class="fashion_right">
+                             <div class="fashion_right_item">
+                               <img src="image/product-education1.png" alt="">
+                                 <div class="fashion_text">
+                                     <p class="fashion_text_name">
+                                         Crepe Jacke With Pompom
+                                     </p>
+                                     <p class="start">
+                                      <img src="image/start.png" alt="">
+                                      <span>6 Reviews</span>
+                                  </p>
+                                     <p class="money">
+                                      <span class="money1">$36.00</span>
+                                      <span class="money2">$42.00</span>
+                                  </p>
+                                 </div>
+                             </div>   
+                             <div class="fashion_right_item">
+                               <img src="image/product-education2.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div> 
+                          <div class="fashion_right_item">
+                           <img src="image/product-education3.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div> 
+                          <div class="fashion_right_item">
+                           <img src="image/product-education4.png" alt="">
+                              <div class="fashion_text">
+                                  <p class="fashion_text_name">
+                                      Crepe Jacke With Pompom
+                                  </p>
+                                  <p class="start">
+                                   <img src="image/start.png" alt="">
+                                   <span>6 Reviews</span>
+                               </p>
+                                  <p class="money">
+                                   <span class="money1">$36.00</span>
+                                   <span class="money2">$42.00</span>
+                               </p>
+                              </div>
+                          </div>      
+                             
+                          </div>
+                   
+                     
+                   </div>
+               </div>
+               </div>
+
+               <!-- signuptomiuikid -->
+
+               <div class="signuptomiuikid">
+                   <div class="signuptomiuikid-container">
+                       <h3>SIGN UP TO MIUKID</h3>
+                       <input type="text" placeholder="Enter your email"/>
+                       <a href="#">Subscribe</a>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+   </main>
+   <footer>
+     <div class="container-footter">
+         <div class="container-footter-info">
+           <div class="container-footter-info-item">
+               <img src="image/footer.png" alt="">
+               <p class="footter-text">
+                   Miukid is a premium eCommerce theme with advanced admin module
+               </p>
+               <p class="phone">
+                   <i class="fa fa-phone" aria-hidden="true"></i>
+                   Telephone:+84329834791
+               </p>
+               <p class="mail">
+                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                   mail:thangdetao@gmail.com
+               </p>
+           </div>
+
+           <div class="container-footter-info-item">
+               <h3>Information</h3>
+               <ul>
+                   <li>About Us</li>
+                   <li>Shipping & Return</li>
+                   <li>Pricacy Notice</li>
+                   <li>Conditions of Use</li>
+                   <li>RSS</li>
+               </ul>
+           </div>
+           <div class="container-footter-info-item">
+               <h3>Information</h3>
+               <ul>
+                   <li>About Us</li>
+                   <li>Shipping & Return</li>
+                   <li>Pricacy Notice</li>
+                   <li>Conditions of Use</li>
+                   <li>RSS</li>
+               </ul>
+           </div>
+           <div class="container-footter-info-item">
+               <h3>Information</h3>
+               <ul>
+                   <li>About Us</li>
+                   <li>Shipping & Return</li>
+                   <li>Pricacy Notice</li>
+                   <li>Conditions of Use</li>
+                   <li>RSS</li>
+               </ul>
+           </div>
+           <div class="container-footter-info-item">
+               <h3>Information</h3>
+               <ul>
+                   <li>About Us</li>
+                   <li>Shipping & Return</li>
+                   <li>Pricacy Notice</li>
+                   <li>Conditions of Use</li>
+                   <li>RSS</li>
+               </ul>
+           </div>
+         </div>
+     </div>   
+   </footer>
+   
+   <script src="javascript/1.js"></script>
 </body>
-
 </html>
